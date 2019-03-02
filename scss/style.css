@@ -1,7 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
 body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: #fff; }
   body #body {
     width: 100%;
     overflow-x: hidden;
@@ -26,7 +28,7 @@ body {
           width: 30px;
           height: 4px;
           background-color: #fff;
-          transition: 0.3s;
+          transition: 0.1s;
           position: relative; }
         body #body header #hamburgerButton #firstLine {
           top: 0; }
@@ -40,12 +42,126 @@ body {
         body #body header #hamburgerButton .change2 {
           top: 3px !important;
           transform: rotate(-45deg); }
-    body #body #comercial-section {
+    body #body #nav {
+      position: absolute;
+      width: 0;
+      min-height: 100%;
+      background-color: #fff;
+      z-index: 1000;
+      overflow-x: hidden;
+      transition: 0.1s; }
+      body #body #nav a {
+        color: gray;
+        font: 400 18px 'Righteous'; }
+      body #body #nav #meni-lista {
+        margin: 20px 0 0 10px; }
+        body #body #nav #meni-lista li {
+          padding: 5px;
+          border-bottom: 1px solid #e8e8e8; }
+        body #body #nav #meni-lista li:last-child {
+          border-bottom: none; }
+        body #body #nav #meni-lista .bottom-border {
+          display: none; }
+        body #body #nav #meni-lista #home {
+          background-color: #ccac00; }
+        body #body #nav #meni-lista #letovanje-lista, body #body #nav #meni-lista #grcka-lista, body #body #nav #meni-lista #cg-lista, body #body #nav #meni-lista #turska-lista, body #body #nav #meni-lista #bugarska-lista, body #body #nav #meni-lista #tunis-lista, body #body #nav #meni-lista #spanija-lista, body #body #nav #meni-lista #egipat-lista,
+        body #body #nav #meni-lista #zimovanje-lista, body #body #nav #meni-lista #srbija-lista, body #body #nav #meni-lista #bug-zima-lista, body #body #nav #meni-lista #slovenija-lista, body #body #nav #meni-lista #austrija-lista, body #body #nav #meni-lista #bih-lista,
+        body #body #nav #meni-lista #metropole-lista, body #body #nav #meni-lista #banje-lista, body #body #nav #meni-lista #soping-lista, body #body #nav #meni-lista #izleti-lista, body #body #nav #meni-lista #daleke-lista {
+          margin-left: 20px;
+          width: 90%;
+          display: none; }
+        body #body #nav #meni-lista #letovanje:hover #letovanje-lista {
+          display: block; }
+        body #body #nav #meni-lista #grcka:hover #grcka-lista {
+          display: block; }
+        body #body #nav #meni-lista #cg:hover #cg-lista {
+          display: block; }
+        body #body #nav #meni-lista #turska:hover #turska-lista {
+          display: block; }
+        body #body #nav #meni-lista #bugarska:hover #bugarska-lista {
+          display: block; }
+        body #body #nav #meni-lista #tunis:hover #tunis-lista {
+          display: block; }
+        body #body #nav #meni-lista #spanija:hover #spanija-lista {
+          display: block; }
+        body #body #nav #meni-lista #egipat:hover #egipat-lista {
+          display: block; }
+        body #body #nav #meni-lista #zimovanje:hover #zimovanje-lista {
+          display: block; }
+        body #body #nav #meni-lista #srbija:hover #srbija-lista {
+          display: block; }
+        body #body #nav #meni-lista #bug-zima:hover #bug-zima-lista {
+          display: block; }
+        body #body #nav #meni-lista #slovenija:hover #slovenija-lista {
+          display: block; }
+        body #body #nav #meni-lista #austrija:hover #austrija-lista {
+          display: block; }
+        body #body #nav #meni-lista #bih:hover #bih-lista {
+          display: block; }
+        body #body #nav #meni-lista #metropole:hover #metropole-lista {
+          display: block; }
+        body #body #nav #meni-lista #banje:hover #banje-lista {
+          display: block; }
+        body #body #nav #meni-lista #soping:hover #soping-lista {
+          display: block; }
+        body #body #nav #meni-lista #izleti:hover #izleti-lista {
+          display: block; }
+        body #body #nav #meni-lista #daleke:hover #daleke-lista {
+          display: block; }
+    body #body #style-div-first {
       width: 125%;
-      height: 500px;
+      height: 100px;
       margin: -35px 0 0 -10%;
       background-color: #fff;
-      transform: rotate(-10deg);
-      position: absolute; }
+      transform: rotate(-10deg); }
+    body #body #comercial-section {
+      width: 100%;
+      background-color: #fff;
+      text-align: center;
+      margin-bottom: 100px; }
+      body #body #comercial-section #com-one img, body #body #comercial-section #com-two img {
+        width: 70%; }
+      body #body #comercial-section #com-one {
+        margin-top: 20px; }
+      body #body #comercial-section #com-two {
+        margin-top: 100px; }
+    body #body #bottom {
+      width: 135%;
+      height: 550px;
+      background-color: #404040;
+      margin: -35px 0 0 -15%;
+      transform: rotate(-10deg); }
+      body #body #bottom #home-info {
+        width: 100%;
+        font-family: arial;
+        font-size: 15px;
+        transform: rotate(10deg);
+        text-align: right; }
+        body #body #bottom #home-info p {
+          padding-bottom: 20px;
+          color: #fff;
+          margin-right: 15%; }
+        body #body #bottom #home-info h5 {
+          padding-bottom: 20px;
+          margin-right: 15%;
+          color: #cead00; }
+      body #body #bottom .social {
+        width: 20%;
+        margin: 20px 23% 0 0;
+        float: right;
+        text-align: right;
+        transform: rotate(10deg); }
+        body #body #bottom .social img {
+          width: 20px;
+          display: inline-block; }
+        body #body #bottom .social #space {
+          width: 20px;
+          height: 20px;
+          display: inline-block; }
+    body #body #style-div-second {
+      width: 100%;
+      height: 100px;
+      margin-top: -50px;
+      background-color: #404040; }
 
 /*# sourceMappingURL=style.css.map */
