@@ -1,7 +1,8 @@
 $('.carousel').carousel();
 
 var hamburger = document.getElementById('hamburgerButton');
-
+var header = document.getElementById("header");
+var logo = document.getElementById("logo");
 
 hamburgerButton.onclick = () => {
 	var line2 = document.getElementById("secondLine").style.display;
@@ -23,6 +24,23 @@ hamburgerButton.onclick = () => {
 		document.getElementById("nav").style.width = "70%";
 	}
 	
+}
+
+window.onscroll = () => {
+
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    header.style.transform = "none";
+    header.style.height = "60px";
+    logo.style.height = "60px";
+    hamburger.style.transform = "none";
+    hamburger.style.marginTop = "22px";
+  } else {
+    header.style.transform = "rotate(-15deg)";
+    header.style.height = "120px";
+    logo.style.height = "120px";
+    hamburger.style = "rotate(15deg)";
+    hamburger.style.marginTop = "60px";
+  }
 }
 
      

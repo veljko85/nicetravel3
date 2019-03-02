@@ -8,44 +8,45 @@ body {
     width: 100%;
     overflow-x: hidden;
     position: relative; }
-    body #body header {
+    body #body #header {
       width: 120%;
       height: 120px;
       margin-left: -10%;
       background-color: rgba(32, 32, 32, 0.9);
       transform: rotate(-15deg);
-      position: absolute; }
-      body #body header img {
+      position: fixed;
+      z-index: 999; }
+      body #body #header #logo {
         height: 120px;
         margin-left: 10%; }
-      body #body header #hamburgerButton {
+      body #body #header #hamburgerButton {
         width: 30px;
         height: 18px;
         float: right;
-        margin: 70px 15% 0 0;
+        margin: 60px 15% 0 0;
         transform: rotate(15deg); }
-        body #body header #hamburgerButton #firstLine, body #body header #hamburgerButton #secondLine, body #body header #hamburgerButton #thirdLine {
+        body #body #header #hamburgerButton #firstLine, body #body #header #hamburgerButton #secondLine, body #body #header #hamburgerButton #thirdLine {
           width: 30px;
           height: 4px;
           background-color: #fff;
           transition: 0.1s;
           position: relative; }
-        body #body header #hamburgerButton #firstLine {
+        body #body #header #hamburgerButton #firstLine {
           top: 0; }
-        body #body header #hamburgerButton #secondLine {
+        body #body #header #hamburgerButton #secondLine {
           top: 3px; }
-        body #body header #hamburgerButton #thirdLine {
+        body #body #header #hamburgerButton #thirdLine {
           top: 6px; }
-        body #body header #hamburgerButton .change1 {
+        body #body #header #hamburgerButton .change1 {
           top: 7px !important;
           transform: rotate(45deg); }
-        body #body header #hamburgerButton .change2 {
+        body #body #header #hamburgerButton .change2 {
           top: 3px !important;
           transform: rotate(-45deg); }
     body #body #nav {
-      position: absolute;
+      position: fixed;
       width: 0;
-      min-height: 100%;
+      min-height: 100vh;
       background-color: #fff;
       z-index: 1000;
       overflow-x: hidden;
