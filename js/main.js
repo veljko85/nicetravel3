@@ -1,3 +1,5 @@
+$('.carousel').carousel();
+
 var hamburger = document.getElementById('hamburgerButton');
 
 hamburgerButton.onclick = () => {
