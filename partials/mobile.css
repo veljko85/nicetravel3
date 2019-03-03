@@ -3,6 +3,8 @@ body {
   height: 100%;
   overflow-x: hidden;
   background-color: #fff; }
+  body #objava {
+    display: none; }
   body #body {
     width: 100%;
     overflow-x: hidden;
@@ -66,7 +68,7 @@ body {
           background-color: #ccac00; }
         body #body #nav #meni-lista #letovanje-lista, body #body #nav #meni-lista #grcka-lista, body #body #nav #meni-lista #cg-lista, body #body #nav #meni-lista #turska-lista, body #body #nav #meni-lista #bugarska-lista, body #body #nav #meni-lista #tunis-lista, body #body #nav #meni-lista #spanija-lista, body #body #nav #meni-lista #egipat-lista,
         body #body #nav #meni-lista #zimovanje-lista, body #body #nav #meni-lista #srbija-lista, body #body #nav #meni-lista #bug-zima-lista, body #body #nav #meni-lista #slovenija-lista, body #body #nav #meni-lista #austrija-lista, body #body #nav #meni-lista #bih-lista,
-        body #body #nav #meni-lista #metropole-lista, body #body #nav #meni-lista #banje-lista, body #body #nav #meni-lista #soping-lista, body #body #nav #meni-lista #izleti-lista, body #body #nav #meni-lista #daleke-lista {
+        body #body #nav #meni-lista #metropole-lista, body #body #nav #meni-lista #metropole-lista-prva, body #body #nav #meni-lista #metropole-lista-druga, body #body #nav #meni-lista #banje-lista, body #body #nav #meni-lista #soping-lista, body #body #nav #meni-lista #izleti-lista, body #body #nav #meni-lista #daleke-lista {
           margin-left: 20px;
           width: 90%;
           display: none; }
@@ -100,6 +102,10 @@ body {
           display: block; }
         body #body #nav #meni-lista #metropole:hover #metropole-lista {
           display: block; }
+        body #body #nav #meni-lista #metropole-prva:hover #metropole-lista-prva {
+          display: block; }
+        body #body #nav #meni-lista #metropole-druga:hover #metropole-lista-druga {
+          display: block; }
         body #body #nav #meni-lista #banje:hover #banje-lista {
           display: block; }
         body #body #nav #meni-lista #soping:hover #soping-lista {
@@ -114,17 +120,42 @@ body {
       margin: -35px 0 0 -10%;
       background-color: #fff;
       transform: rotate(-10deg); }
-    body #body #comercial-section {
-      width: 100%;
-      background-color: #fff;
-      text-align: center;
-      margin-bottom: 100px; }
-      body #body #comercial-section #com-one img, body #body #comercial-section #com-two img {
-        width: 70%; }
-      body #body #comercial-section #com-one {
-        margin-top: 20px; }
-      body #body #comercial-section #com-two {
-        margin-top: 100px; }
+    body #body #main-content {
+      width: 100%; }
+      body #body #main-content #comercial-section {
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        margin-bottom: 100px; }
+        body #body #main-content #comercial-section #com-one img, body #body #main-content #comercial-section #com-two img {
+          width: 70%; }
+        body #body #main-content #comercial-section #com-one {
+          margin-top: 20px; }
+        body #body #main-content #comercial-section #com-two {
+          margin-top: 100px; }
+      body #body #main-content .destination {
+        width: 100%;
+        min-height: 100%;
+        background-color: #fff;
+        font: 400 18px 'Righteous';
+        color: #000; }
+        body #body #main-content .destination #style-div-third {
+          width: 125%;
+          height: 100px;
+          margin: -45px 0 0 -10%;
+          background-color: #fff;
+          transform: rotate(-10deg); }
+        body #body #main-content .destination .dest-info {
+          width: 100%;
+          text-align: left;
+          margin: 0 0 100px 0; }
+          body #body #main-content .destination .dest-info h1 {
+            text-align: right;
+            color: #ccac00;
+            font-size: 25px;
+            margin-right: 10px; }
+          body #body #main-content .destination .dest-info p {
+            margin-left: 10px; }
     body #body #bottom {
       width: 135%;
       height: 550px;
@@ -147,7 +178,7 @@ body {
           color: #cead00; }
       body #body #bottom .social {
         width: 20%;
-        margin: 20px 23% 0 0;
+        margin: 20px 25% 0 0;
         float: right;
         text-align: right;
         transform: rotate(10deg); }
@@ -162,6 +193,11 @@ body {
       width: 100%;
       height: 100px;
       margin-top: -50px;
-      background-color: #404040; }
+      background-color: #404040;
+      text-align: right; }
+      body #body #style-div-second p {
+        font: 500 15px 'Righteous';
+        color: #fff;
+        padding: 70px 10px 0 0; }
 
 /*# sourceMappingURL=mobile.css.map */

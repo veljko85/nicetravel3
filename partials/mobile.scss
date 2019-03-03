@@ -1,8 +1,13 @@
+
 body {
 	width: 100%;
 	height: 100%;
 	overflow-x: hidden;
 	background-color: #fff;
+
+	#objava {
+				display: none;
+			}
 
 	#body {
 		width: 100%;
@@ -90,7 +95,7 @@ body {
 
 				#letovanje-lista, #grcka-lista, #cg-lista, #turska-lista, #bugarska-lista, #tunis-lista, #spanija-lista, #egipat-lista, 
 				#zimovanje-lista, #srbija-lista, #bug-zima-lista, #slovenija-lista, #austrija-lista, #bih-lista,
-				#metropole-lista, #banje-lista, #soping-lista, #izleti-lista, #daleke-lista{
+				#metropole-lista, #metropole-lista-prva, #metropole-lista-druga, #banje-lista, #soping-lista, #izleti-lista, #daleke-lista{
 					margin-left: 20px;
 					width: 90%;
 					display: none;
@@ -144,6 +149,12 @@ body {
 				#metropole:hover #metropole-lista {
 					display: block;
 				}
+				#metropole-prva:hover #metropole-lista-prva {
+					display: block;
+				}
+				#metropole-druga:hover #metropole-lista-druga {
+					display: block;
+				}
 				#banje:hover #banje-lista {
 					display: block;
 				}
@@ -167,22 +178,59 @@ body {
 			transform: rotate(-10deg);
 		}
 
-		#comercial-section {
+		#main-content {
 			width: 100%;
-			background-color: #fff;
-			text-align: center;
-			margin-bottom: 100px;
-			#com-one, #com-two {
-				img {
-					width: 70%;
+
+
+
+			#comercial-section {
+				width: 100%;
+				background-color: #fff;
+				text-align: center;
+				margin-bottom: 100px;
+				#com-one, #com-two {
+					img {
+						width: 70%;
+					}
+				}
+				#com-one {
+					margin-top: 20px;
+				}
+				#com-two {
+					margin-top: 100px;
+				}	
+			}
+
+			.destination {
+				width: 100%;
+				min-height: 100%;
+				background-color: #fff;
+				font: 400 18px 'Righteous';
+				color: #000;
+				
+
+				#style-div-third {
+					width: 125%;
+					height: 100px;
+					margin: -45px 0 0 -10%;
+					background-color: #fff;
+					transform: rotate(-10deg);
+				}
+				.dest-info {
+					width: 100%;
+					text-align: left;
+					margin: 0 0 100px 0;
+					h1 {
+						text-align: right;
+						color: #ccac00;
+						font-size: 25px;
+						margin-right: 10px;
+					}
+					p {
+						margin-left: 10px;
+					}
 				}
 			}
-			#com-one {
-				margin-top: 20px;
-			}
-			#com-two {
-				margin-top: 100px;
-			}	
 		}
 
 		#bottom {
@@ -210,7 +258,7 @@ body {
 			}
 			.social {
 				width: 20%;
-				margin: 20px 23% 0 0;
+				margin: 20px 25% 0 0;
 				float: right;
 				text-align: right;
 				transform: rotate(10deg);
@@ -230,6 +278,12 @@ body {
 			height: 100px;
 			margin-top: -50px;
 			background-color: #404040;
+			text-align: right;
+			p {
+				font: 500 15px 'Righteous';
+				color: #fff;
+				padding: 70px 10px 0 0;
+			}
 		}
 
 
